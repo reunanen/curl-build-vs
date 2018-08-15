@@ -1,3 +1,6 @@
 [submodule "curl"]
 	path = curl
 	url = https://github.com/reunanen/curl
+[submodule "Precompiled-OpenSSL-Windows"]
+	path = Precompiled-OpenSSL-Windows
+	url = https://github.com/reunanen/Precompiled-OpenSSL-Windows
