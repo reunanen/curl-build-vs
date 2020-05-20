@@ -105,6 +105,10 @@
     <Lib>
       <AdditionalDependencies>wldap32.lib</AdditionalDependencies>
     </Lib>
+    <PreBuildEvent>
+      <Command>xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libcryptoMDd.dll $(OutDir)
+xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libsslMDd.dll $(OutDir)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -139,6 +143,10 @@
     <Lib>
       <AdditionalDependencies>wldap32.lib</AdditionalDependencies>
     </Lib>
+    <PreBuildEvent>
+      <Command>xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libcryptoMD.dll $(OutDir)
+xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libsslMD.dll $(OutDir)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="curl\lib\asyn-ares.c" />
