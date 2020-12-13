@@ -27,26 +27,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
@@ -69,20 +69,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>curl/include;curl/lib;.;Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>curl/include;curl/lib;.;Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2013\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>curl/include;curl/lib;.;Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>curl/include;curl/lib;.;Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2013\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>curl/include;curl/lib;.;Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>curl/include;curl/lib;.;Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2013\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>curl/include;curl/lib;.;Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>curl/include;curl/lib;.;Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2013\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -106,8 +106,8 @@
       <AdditionalDependencies>wldap32.lib</AdditionalDependencies>
     </Lib>
     <PreBuildEvent>
-      <Command>xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libcryptoMDd.dll $(OutDir)
-xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libsslMDd.dll $(OutDir)</Command>
+      <Command>xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2013\bin64\libcryptoMDd.dll $(OutDir)
+xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2013\bin64\libsslMDd.dll $(OutDir)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -144,8 +144,8 @@ xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libsslMDd.dll $
       <AdditionalDependencies>wldap32.lib</AdditionalDependencies>
     </Lib>
     <PreBuildEvent>
-      <Command>xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libcryptoMD.dll $(OutDir)
-xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libsslMD.dll $(OutDir)</Command>
+      <Command>xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2013\bin64\libcryptoMD.dll $(OutDir)
+xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2013\bin64\libsslMD.dll $(OutDir)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
