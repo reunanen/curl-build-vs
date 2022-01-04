@@ -1,3 +1,9 @@
 [submodule "curl"]
 	path = curl
 	url = https://github.com/reunanen/curl
+[submodule "openssl1_1-win-build"]
+	path = openssl1_1-win-build
+	url = https://github.com/reunanen/openssl1_1-win-build
+[submodule "zlib-win-build"]
+	path = zlib-win-build
+	url = https://github.com/reunanen/zlib-win-build
