@@ -104,6 +104,7 @@
     </ClCompile>
     <Lib>
       <AdditionalDependencies>wldap32.lib</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4221</AdditionalOptions>
     </Lib>
     <PreBuildEvent>
       <Command>xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libcryptoMDd.dll $(OutDir)
@@ -142,6 +143,7 @@ xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libsslMDd.dll $
     </Link>
     <Lib>
       <AdditionalDependencies>wldap32.lib</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4221</AdditionalOptions>
     </Lib>
     <PreBuildEvent>
       <Command>xcopy /y Precompiled-OpenSSL-Windows\openssl-1.1.0e-vs2015\bin64\libcryptoMD.dll $(OutDir)
